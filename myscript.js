@@ -8,8 +8,8 @@ $(document).ready(function() {
             console.log(response);
             var row = "";
             response.forEach(element => {
-                  console.log(element.japName,element.engName,element.fishType);
-                  if(element.japName.includes(text)||element.engName.includes(text)||element.fishType.includes(text)){
+                console.log(element.jap,element.eng,element.fishType,element.species);
+                  if(element.jap.includes(text)||element.eng.includes(text)||element.fishType.includes(text)||element.species.includes(text)){
                   row += "<tr>"+
                    "<td>"+element.jap+"</td>"+
                    "<td>"+element.eng+ "</td>"+
@@ -27,7 +27,7 @@ $(document).ready(function() {
         console.log(response);
         var row = "";
         response.forEach(element => {
-              console.log(element.japName,element.engName,element.fishType);
+              console.log(element.jap,element.eng,element.fishType,element.species);
               row += "<tr>"+
                "<td>"+element.jap+"</td>"+
                "<td>"+element.eng+ "</td>"+
