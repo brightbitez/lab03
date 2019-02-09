@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="bootstrap-4.2.1-dist/css/bootstrap.css">
- 
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Japanese Fishes</title>
 </head>
 <body>
@@ -16,21 +16,38 @@
 						<div class="level-item">
 							<div class="field is-horizontal">
 								<div class="field-label is-normal">
-									<label class="label" for="input-text">   Search by Japanese Name </label>
+									<label class="label" for="input-text" id="search-by">   Search by Japanese Name </label>
 								</div>
 								<div class="field-body">
+								
 									<div class="field">
 									<p class="control">
 										<input  class="input is-rounded" 
 												type="text" id="input-text"
 												placeholder="Enter some text">
 									</p>
+									<p id = "advanced-text">Select searching option:</p>
+									<select id = "search-select">
+											<option value="jap">Search by Japanese Name</option>
+											<option value="eng">Search by English Name</option>
+											<option value="fishtype">Search by Fish Type</option>
+											<option value="species">Search by Species</option>
+											<option value="all">Search Every Column</option>
+										  </select>
 									</div>
 			
 									<div class="control">
 										<button id="submit-btn" class="button is-primary">
 											Submit
 										</button>
+										<button id="advanced-btn" class="advanced-btn">
+												Advanced Searching
+										</button>
+										<button id="advanced-submit-btn" class="advanced-submit-btn">
+													Submit
+										</button>
+									
+									
 									</div>
 								</div>
 							</div>
