@@ -13,6 +13,7 @@ h1{
 }
 body{
     background-image: url("bg.jpg");
+    background-size: 1000px 1000px;
 }
 #submit-btn{
     position: relative;
