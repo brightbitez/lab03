@@ -1,0 +1,36 @@
+h1{
+    margin-left:35px;
+}
+#advanced-btn{
+    position: relative;
+    left: 400px;
+    bottom: 146px;
+}
+.label{
+    position: relative;
+    left:35px;
+}
+#submit-btn{
+    position: relative;
+    left: 240px;
+    bottom: 111px;
+}
+#input-text{
+    position: relative;
+    left: 35px;
+}
+#advanced-text{
+    position: relative;
+    left: 650px;
+    bottom: 80px;
+}
+#search-select{
+    position: relative;
+    left: 850px;
+    bottom: 120px;
+}
+#advanced-submit-btn{
+    position: relative;
+    left: 840px ;
+    bottom: 145px;
+}
