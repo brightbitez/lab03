@@ -1,15 +1,15 @@
 $(document).ready(function() {
     $('#submit-btn').click(function() {
         var text = $('#input-text').val();
+        var row = "";
         $.ajax({
             url: "fish.json",
             dataType: "json"
         }).done(function(response) {
             console.log(response);
-            var row = "";
             response.forEach(element => {
-                console.log(element.jap,element.eng,element.fishType,element.species);
-                  if(element.jap.includes(text)||element.eng.includes(text)||element.fishType.includes(text)||element.species.includes(text)){
+                  if(element.jap.toLowerCase().includes(text)||element.eng.toLowerCase().includes(text)||
+                  element.fishtype.toLowerCase().includes(text)||element.species.toLowerCase().includes(text)){
                   row += "<tr>"+
                    "<td>"+element.jap+"</td>"+
                    "<td>"+element.eng+ "</td>"+
@@ -19,6 +19,9 @@ $(document).ready(function() {
             });
         });
     });
+
+
+
     //display
     $.ajax({
         url: "fish.json",
@@ -27,7 +30,7 @@ $(document).ready(function() {
         console.log(response);
         var row = "";
         response.forEach(element => {
-              console.log(element.jap,element.eng,element.fishType,element.species);
+              console.log(element.jap,element.eng,element.fishtype,element.species);
               row += "<tr>"+
                "<td>"+element.jap+"</td>"+
                "<td>"+element.eng+ "</td>"+
