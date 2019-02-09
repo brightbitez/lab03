@@ -4,7 +4,7 @@ $(document).ready(function() {
     document.getElementById("search-select").style.visibility = "hidden";
     document.getElementById("advanced-submit-btn").style.display = "none";
     $('#submit-btn').click(function() {
-        var text = $('#input-text').val();
+        var text = $('#input-text').val().toLowerCase();
         var row = "";
         $.ajax({
             url: "fish.json",
