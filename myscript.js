@@ -8,8 +8,7 @@ $(document).ready(function() {
         }).done(function(response) {
             console.log(response);
             response.forEach(element => {
-                  if(element.jap.toLowerCase().includes(text)||element.eng.toLowerCase().includes(text)||
-                  element.fishtype.toLowerCase().includes(text)||element.species.toLowerCase().includes(text)){
+                  if(element.jap.toLowerCase().includes(text)){
                   row += "<tr>"+
                    "<td>"+element.jap+"</td>"+
                    "<td>"+element.eng+ "</td>"+
